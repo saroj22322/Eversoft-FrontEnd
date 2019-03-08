@@ -9,25 +9,67 @@
 	  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <div class=class="container-fluids" style="width: 100%; height: 600px">
+    <div class=class="container-fluids" style="width: 100%; height: 100vh">
+        <!--leftest vertical nav bar-->
         <div class="row">
-            <div class="col-lg-3 bg-secondary" style="height: 100%">
+            <div class="col-lg-2 bg-dark m-0 p-0" style="height: 100vh; width: 100%;">
+                
                 <ul class="nav flex-column ">
-                    <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <li class="nav-itemx ">
+                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#"><p>Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                </ul>
+            </div>
+
+            <!--chat heads vertical nav bar-->
+        
+            <div class="col-lg-2 bg-secondary m-0 p-0" style="height: 100vh; width: 100%;">
+                
+                <ul class="nav flex-column ">
+                    
+                    <!--search bar-->
+                    <li>
+                        <div class=" p-3">
+                            <input class=" searchBoxBlackBackground form-control border-0" type="text" placeholder="Search" aria-label="Search"
+                            style="border-radius: 20px;">
+                        </div>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+                    <!--chat heads -->
+                    <li class="nav-itemx nav-active">
+                        <div class="container">
+                            <div class="row row-no-gutters" style="height:60px">
+                                <!--photo-->
+                                <div class="col-3 p-3 h-100">
+                                        <img src="..." class="rounded float-left" alt="...">
+                                </div>
+                                <!--text part-->
+                                <div class = "col-7 p-0 h-100">
+                                    <div class="container">
+                                        <!--user name part-->
+                                        <div class="row row-no-gutters">
+                                            <a class="nav-link text-light text-center p-0 pt-2" href="#" >Active</a>    
+                                        </div>
+                                        <!-- user message part-->
+                                        <div class="row row-no-gutters">
+                                            <p class="text-left" style="font-size: 12px; color:gainsboro;"> This is test</p>
+                                        </div>      
+
+                                    </div>   
+                                </div>
+                                
+                                <div class="col-2 nav-link text-center text-light h-100 pt-3">...</div>
+
+                            </div>    
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>  
+
+        
+        
+
     </div>
 
 

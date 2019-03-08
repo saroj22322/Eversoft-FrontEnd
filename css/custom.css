@@ -1,0 +1,7 @@
+.nav-active:hover{
+    background-color: darkslategray;
+
+}
+input[type="text"], textarea{
+    background-color: darkslategray;
+}
