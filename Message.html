@@ -13,10 +13,19 @@
         <!--leftest vertical nav bar-->
         <div class="row">
             <div class="col-lg-2 bg-dark m-0 p-0" style="height: 100vh; width: 100%;">
+                <!--nav head free space-->
+                <div style="height: 5vh;"></div>
                 
+                <!--nav elements-->
                 <ul class="nav flex-column ">
                     <li class="nav-itemx ">
-                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#"><p>Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
+                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#">Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
+                    </li>
+                </ul>
+
+                <ul class="nav flex-column ">
+                   <li class="nav-itemx ">
+                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#">Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
                     </li>
                 </ul>
             </div>
@@ -64,6 +73,99 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+
+            <!-- chat part-->
+            <div class="col-lg-6" style="height: 100vh; background-color: rgb(167, 167, 167)">
+                <!--chat message display-->
+                <div class=" containter-fluids col-lg-12 overflow-auto" style="height: 90vh">
+                    <!--receiving chat-->
+                    <div class="row p-2">
+                        <!--photo-->
+                        <div class="col-2 p-2 h-100">
+                                <img src="..." class="rounded float-left" alt="...">
+                        </div>
+                        <!--text part-->
+                        <div class = "col-7 p-0 h-100" style="background-color:red ">
+                            <div class="container">
+                                <p> This is chat message 1 hello there are you okey every one 
+                                   klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
+                                </p>    
+                            </div>   
+                        </div>                  
+                    </div> 
+
+                    <!--sending chat-->
+                    <div class="row p-2" >
+                        <!--empty space for float right effect-->
+                        <div class="col-5"></div>
+                        <!--text part-->
+                        <div class = "col-5 p-0 h-100" style="background-color: blue">
+                            <div class="container">
+                                <p> This is chat message 1 hello there are you okey every one 
+                                    klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
+                                </p>    
+                            </div>   
+                        </div>
+                            <!--photo-->
+                        <div class="col-2 p-3 h-100">
+                            <img src="..." class="rounded float-left" alt="...">
+                      </div>
+                    </div>
+
+                    <!--sending chat-->
+                    <div class="row p-2" >
+                        <!--empty space for float right effect-->
+                        <div class="col-5"></div>
+                        <!--text part-->
+                        <div class = "col-5 p-0 h-100" style="background-color: blue">
+                            <div class="container">
+                                <p> This is chat message 1 hello there are you okey every one 
+                                    klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
+                                </p>                                   
+                            </div> 
+                        </div>
+                        <!--photo-->
+                        <div class="col-2 p-3 h-100">
+                            <img src="..." class="rounded float-left" alt="...">
+                        </div>                    
+                    </div>
+                </div>
+                <!-- chat message input-->
+                <div class="form-group">
+                    <input type="text" class="form-control" id="usr">
+                </div>
+            </div>
+
+            <!-- profile detail section-->
+            <div class="col-lg-2"> 
+
+                <!--menu bar for profile-->
+                <div class="col-12 pr-4 pb-3 pt-3 m-2 h-3">
+                    <img class="float-right" src= "./icons/ellipsis-h-solid.svg" style="height: 20px; width: 20px">
+                </div>
+                <!-- profile photo block -->
+                <div class="col-12 pl-4 pr-4 pb-4 pt-2 ml-4">
+                    <img src="./image/img.jpeg" class="rounded-circle " alt="..." style="height: 20vh; width :20vh">
+                </div>
+                <!-- profile name-->
+                <div class="col-12 pl-0 pb-2 ">
+                    <p class="text-center p-0 m-0">Pradeep Poudel</p>
+                    <p class="text-center p-0">Pokhara</p>
+                </div>
+                <!-- online status-->
+                <div class="col-12 pt-0">
+                    <!--drop down dvider-->
+                    <div class="dropdown-divider"></div>
+                    <!--online status-->
+                    <div>
+                        <i class="p-0 m-0"><small>Pradeep Poudel</small></i>
+                        <i class="pl-5"><small>online</small></i>
+                    </div>
+                    <!--drop down dvider-->
+                    <div class="dropdown-divider"></div>
+
+                </div>
             </div>
         </div>  
 
