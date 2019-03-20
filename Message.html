@@ -6,35 +6,21 @@
 	  <meta name="description" content="">
 	  <meta name="author" content="">
 	  <link rel="stylesheet" href="css/bootstrap.min.css">
-	  <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link href="css/message.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+        rel="stylesheet">
 </head>
 <body>
     <div class=class="container-fluids" style="width: 100%; height: 100vh">
-        <!--leftest vertical nav bar-->
+        <!--whole containter startsr-->
         <div class="row">
-            <div class="col-lg-2 bg-dark m-0 p-0" style="height: 100vh; width: 100%;">
-                <!--nav head free space-->
-                <div style="height: 5vh;"></div>
-                
-                <!--nav elements-->
-                <ul class="nav flex-column ">
-                    <li class="nav-itemx ">
-                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#">Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
-                    </li>
-                </ul>
-
-                <ul class="nav flex-column ">
-                   <li class="nav-itemx ">
-                    <a class="nav-link nav-active text-light pl-5" style="font-size:14px; width: 100%" href="#">Active &nbsp&nbsp&nbsp&nbsp&nbsp5</a>
-                    </li>
-                </ul>
-            </div>
-
             <!--chat heads vertical nav bar-->
         
-            <div class="col-lg-2 bg-secondary m-0 p-0" style="height: 100vh; width: 100%;">
+            <div class="col-lg-2 bg-secondary m-0 p-0 pl-3" style="height: 100vh; width: 100%;">
                 
-                <ul class="nav flex-column ">
+                <!--main flexing nav part -->
+                <ul class="nav flex-column overflow-auto ">
                     
                     <!--search bar-->
                     <li>
@@ -43,15 +29,19 @@
                             style="border-radius: 20px;">
                         </div>
                     </li>
+                    <!--end search bar-->
 
                     <!--chat heads -->
                     <li class="nav-itemx nav-active">
                         <div class="container">
                             <div class="row row-no-gutters" style="height:60px">
+                                
                                 <!--photo-->
                                 <div class="col-3 p-3 h-100">
                                         <img src="..." class="rounded float-left" alt="...">
                                 </div>
+                                <!--end photo-->
+
                                 <!--text part-->
                                 <div class = "col-7 p-0 h-100">
                                     <div class="container">
@@ -59,83 +49,136 @@
                                         <div class="row row-no-gutters">
                                             <a class="nav-link text-light text-center p-0 pt-2" href="#" >Active</a>    
                                         </div>
+                                        <!-- end user name part-->
+
                                         <!-- user message part-->
                                         <div class="row row-no-gutters">
                                             <p class="text-left" style="font-size: 12px; color:gainsboro;"> This is test</p>
                                         </div>      
-
+                                        <!--end user message part-->
                                     </div>   
                                 </div>
+                                <!--end text name part-->
                                 
                                 <div class="col-2 nav-link text-center text-light h-100 pt-3">...</div>
 
                             </div>    
                         </div>
                     </li>
+                    <!-- end chat heads part-->
+
                 </ul>
+                <!--nav bar listing section end -->
             </div>
-
+            <!-- whole nav bar end -->
             <!-- chat part-->
-            <div class="col-lg-6" style="height: 100vh; background-color: rgb(167, 167, 167)">
-                <!--chat message display-->
-                <div class=" containter-fluids col-lg-12 overflow-auto" style="height: 90vh">
-                    <!--receiving chat-->
-                    <div class="row p-2">
-                        <!--photo-->
-                        <div class="col-2 p-2 h-100">
-                                <img src="..." class="rounded float-left" alt="...">
-                        </div>
-                        <!--text part-->
-                        <div class = "col-7 p-0 h-100" style="background-color:red ">
-                            <div class="container">
-                                <p> This is chat message 1 hello there are you okey every one 
-                                   klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
-                                </p>    
-                            </div>   
-                        </div>                  
-                    </div> 
+            <div class="col-lg-8 " style="height: 100vh;">
+                     
+            
+                    
 
-                    <!--sending chat-->
-                    <div class="row p-2" >
-                        <!--empty space for float right effect-->
-                        <div class="col-5"></div>
-                        <!--text part-->
-                        <div class = "col-5 p-0 h-100" style="background-color: blue">
-                            <div class="container">
-                                <p> This is chat message 1 hello there are you okey every one 
-                                    klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
-                                </p>    
-                            </div>   
-                        </div>
-                            <!--photo-->
-                        <div class="col-2 p-3 h-100">
-                            <img src="..." class="rounded float-left" alt="...">
-                      </div>
-                    </div>
+                            <!--whole chat history part -->
+                            <div class="msg_history overflow-auto" style="height: 92vh;">
+                                
+                                <!--message start-->
+                                <!--incoming message-->
+                                <div class="incoming_msg">
+                                    
+                                    <!--profile start-->
+                                    <div class="incoming_msg_img"> <img src="image/logo.gif" alt="Logo"> </div>
+                                    <!-- end profile start-->
+                                    
+                                    <!-- message start-->
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>Hy this is simple test message</p>
+                                            
+                                            <span class="time_date"> 11:01 AM | March 10</span>
+                                        </div>
+                                    </div>
+                                    <!--message end-->
 
-                    <!--sending chat-->
-                    <div class="row p-2" >
-                        <!--empty space for float right effect-->
-                        <div class="col-5"></div>
-                        <!--text part-->
-                        <div class = "col-5 p-0 h-100" style="background-color: blue">
-                            <div class="container">
-                                <p> This is chat message 1 hello there are you okey every one 
-                                    klasjfklsafdj salfj lksadjfalj flsal kfalksjf lsakf jasl;kj fsad
-                                </p>                                   
-                            </div> 
-                        </div>
-                        <!--photo-->
-                        <div class="col-2 p-3 h-100">
-                            <img src="..." class="rounded float-left" alt="...">
-                        </div>                    
-                    </div>
-                </div>
-                <!-- chat message input-->
-                <div class="form-group">
-                    <input type="text" class="form-control" id="usr">
-                </div>
+                                </div>
+                                <!--incoming message end-->
+
+                                <!-- outgoing message -->
+                                <div class="outgoing_msg">
+                                        
+                                    <div class="float-right pl-3"> <img src="image/logo.gif" alt="Logo" style="height:  60px; width: 50px"> </div>
+                                        <div class="sent_msg float-right">
+                                            <p>Forestry office baata letter accept vayo biruwaa ko laagi aba haami ready huna
+                                                parcha.
+                                            </p>
+                                            <span class="time_date"> 11:01 AM | Today</span>
+                                        </div>
+                                        
+                                </div>
+                                <!--outgoing message end -->
+
+                                <!--incoming message-->
+                                <div class="incoming_msg">
+                                    <div class="incoming_msg_img"> <img src="image/logo.gif" alt="Logo"> </div>
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>Hey! I am just sitting</p>
+                                            <span class="time_date"> 11:01 AM | Yesterday</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--incoming message end-->
+
+                                <!--out going message end -->
+                                <div class="outgoing_msg">
+                                    <div class="float-right pl-3"> <img src="image/logo.gif" alt="Logo" style="height:  60px; width: 50px"> </div>
+                                    <div class="sent_msg float-right>
+                                        <p>Forestry office baata letter accept vayo biruwaa ko laagi aba haami ready huna
+                                            parcha.
+                                        </p>
+                                        <span class="time_date"> 11:01 AM | Today</span>
+                                    </div>
+                                <!-- outgoing message end -->
+                                </div>
+                                <div class="incoming_msg">
+                                    <div class="incoming_msg_img"> <img src="image/logo.gif" alt="Logo"> </div>
+                                    <div class="received_msg">
+                                        <div class="received_withd_msg">
+                                            <p>If your document has a header, such as a page number or title, you can format it
+                                                any way you want.</p>
+                                            <span class="time_date"> 11:01 AM | Today</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- message end-->
+                            <!-- chat log division finished-->
+
+                            <!-- sending message division-->
+                            <div class="type_msg">
+                                <div class="row">
+                                    <!-- attachment portion-->
+                                    <div class="pl-3 pt-3 pr-3 ">
+                                        <i class="fa fa-paperclip attachment" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- send message portion-->
+                                    <div class="input_msg_write" style="width: 85%">
+                                        <input type="text" class="write_msg" placeholder="Type a message" />
+                                    </div>
+                                    <!--send message end-->
+                                    
+                                    <!--send message icon-->
+                                    <div>
+                                        <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                    <!--send message icon finish-->
+                                </div>
+                            </div>
+                            <!--division finished for sending message -->
+                        
+                        
             </div>
+            <!--chat section end -->
+
 
             <!-- profile detail section-->
             <div class="col-lg-2"> 
@@ -144,19 +187,26 @@
                 <div class="col-12 pr-4 pb-3 pt-3 m-2 h-3">
                     <img class="float-right" src= "./icons/ellipsis-h-solid.svg" style="height: 20px; width: 20px">
                 </div>
+                <!--menu bar for profile end-->
+
                 <!-- profile photo block -->
                 <div class="col-12 pl-4 pr-4 pb-4 pt-2 ml-4">
                     <img src="./image/img.jpeg" class="rounded-circle " alt="..." style="height: 20vh; width :20vh">
                 </div>
+                <!-- profile photo block -->
+
                 <!-- profile name-->
                 <div class="col-12 pl-0 pb-2 ">
                     <p class="text-center p-0 m-0">Pradeep Poudel</p>
                     <p class="text-center p-0">Pokhara</p>
                 </div>
+                <!-- profile name end-->
+
                 <!-- online status-->
                 <div class="col-12 pt-0">
                     <!--drop down dvider-->
                     <div class="dropdown-divider"></div>
+
                     <!--online status-->
                     <div>
                         <i class="p-0 m-0"><small>Pradeep Poudel</small></i>
@@ -166,14 +216,16 @@
                     <div class="dropdown-divider"></div>
 
                 </div>
+                <!--online section end-->
             </div>
+            <!--profile detail section end-->
         </div>  
 
         
         
-
+        <!--whole container row end -->
     </div>
-
+    <!-- whole container ends -->
 
 </body>
 </html>

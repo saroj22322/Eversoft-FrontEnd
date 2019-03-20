@@ -30,7 +30,7 @@ img{ max-width:100%;}
   .mesgs {
     float: left;
     padding: 30px 15px 0 25px;
-    width: 60%;
+    width: 90%;
   }
   
    .sent_msg p {
@@ -44,7 +44,6 @@ img{ max-width:100%;}
   .outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
 
   .sent_msg {
-    float: right;
     width: 46%;
   }
 
