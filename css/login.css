@@ -56,7 +56,7 @@
   color: rgb(233, 225, 225);
   font-size: 14px;
   line-height: 1.5;
-  margin: 40px;
+  margin: 30px;
 }
 .right {
   background: rgb(245, 246, 248);
@@ -135,10 +135,10 @@ path {
 }
 
 /* CSS design for error page */
-.center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto;}
+/* .center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto;} */
 body {
   background: #dedede;
 }
 .page-wrap {
-  min-height: 100vh;
+  min-height: 50vh;
 }
