@@ -1,3 +1,18 @@
+body{
+    background-color:#fafafa;
+}
+.err {
+    color:#286090;
+}
+.err h1{
+    font-size: 150px;
+}
+.err p{
+    font-size: 25px;
+}
+.mssg p{
+    font-size: 16px;
+}
 #btn-chat{
     /*background-color: #0b3290;*/
     /*color: #FFF;*/
