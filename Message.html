@@ -16,12 +16,22 @@
         <!--whole containter startsr-->
         <div class="row">
             <!--chat heads vertical nav bar-->
-        
-            <div class="col-lg-2 bg-secondary m-0 p-0 pl-3" style="height: 100vh; width: 100%;">
-                
+            
+
+
+
+            <div id="sidenav" class="sidebar d-none d-sm-none d-md-block col-md-3 col-lg-2  bg-secondary m-0 p-0 pl-3" style="height: 100vh; width: 100%;">
+                <div class="overlay"></div>
                 <!--main flexing nav part -->
                 <ul class="nav flex-column overflow-auto ">
                     
+                    <li>
+                        
+                            <div id="dismiss">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                        
+                    </li>
                     <!--search bar-->
                     <li>
                         <div class=" p-3">
@@ -72,9 +82,16 @@
             </div>
             <!-- whole nav bar end -->
             <!-- chat part-->
-            <div class="col-lg-8 " style="height: 100vh;">
+            <div class="col-md-6 col-lg-8 " style="height: 100vh;">
                      
-            
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Toggle Sidebar</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
                     
 
                             <!--whole chat history part -->
@@ -181,7 +198,7 @@
 
 
             <!-- profile detail section-->
-            <div class="col-lg-2"> 
+            <div class="d-none d-sm-none d-md-block col-md-3 col-lg-2"> 
 
                 <!--menu bar for profile-->
                 <div class="col-12 pr-4 pb-3 pt-3 m-2 h-3">
@@ -226,6 +243,20 @@
         <!--whole container row end -->
     </div>
     <!-- whole container ends -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
 
+            $('#dismiss').on('click', function () {
+                $('#sidenav').hide();
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidenav').hide();
+            });
+        });
+    </script>
 </body>
 </html>

@@ -5,3 +5,28 @@
 input[type="text"], textarea{
     background-color: darkslategray;
 }
+
+@media (max-width:576px) {
+
+      .form-border
+      {
+        border:1px solid !important;
+        border-radius: 5px;
+        border-color: rgba(255,255,255,0.3);
+
+        }
+
+
+}
+
+@media (min-width:576px) {
+
+      .form-fulls
+      {
+        border:1px grey !important;
+        border-radius: 5px;
+
+        }
+
+
+}
