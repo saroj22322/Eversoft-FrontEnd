@@ -2,9 +2,9 @@
     background-color: darkslategray;
 
 }
-input[type="text"], textarea{
+/*input[type="text"], textarea{
     background-color: darkslategray;
-}
+}*/
 
 @media (max-width:576px) {
 
@@ -12,7 +12,7 @@ input[type="text"], textarea{
       {
         border:1px solid !important;
         border-radius: 5px;
-        border-color: rgba(255,255,255,0.3);
+        border-color: rgb(69, 2, 156);
 
         }
 
@@ -30,3 +30,54 @@ input[type="text"], textarea{
 
 
 }
+
+.small-text{
+  font-size: 12px;
+}
+
+.normal-bold-text{
+  font-size: 12px; 
+  font-weight:500;
+}
+
+.grey-text{
+  color:  rgb(66, 66, 66);
+}
+
+.light-grey-text{
+  color: rgb(95, 94, 94);
+}
+.input-text-field >input[type=text], .input-text-field >input[type=password] {
+  border-style: none;
+  border-bottom:  rgba(255, 255, 255, 0) 0.5px solid;
+  width:100%;
+  transition: 0.3s ease;
+  font-size: 12px; 
+  font-weight:500;
+  color:  rgb(66, 66, 66);
+}
+
+.input-text-field >input[type=text]:hover, .input-text-field >input[type=password]:hover {
+  border-bottom:  rgba(167, 167, 167,0.5) 0.5px solid ;
+}
+
+.input-text-field >input[type=text]:focus, .input-text-field >input[type=password]:focus {
+  outline: none !important;
+  border-bottom:  rgba(167, 167, 167, 0.5) 0.5px solid;
+}
+
+.sign-up{
+  background-color: rgb(111, 109, 255);
+  color:white;
+  width: 100%;
+  height: 10vh;
+  border-radius: 5px;
+  border: none;
+  transition: .5s ease-in-out;
+}
+
+.sign-up:hover{
+  box-shadow: 0px 0px 10px rgb(111, 109, 255) ;
+  font-size: 105%;
+}
+
