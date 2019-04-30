@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -15,12 +17,22 @@
 
 	<div class="container-fluids" style="width: 100%; height: 600px">
 		<!--header space -->
-		<div class="row p-3 "></div>
+		<div id="topdiv" class="row p-3 "></div>
 
+
+		<div  class="row pl-4" id="MobileHideSignup" style="background:rgb(66, 66, 66);" >
+			<div class="col-12 pl-4 pt-4 ">
+					<span class="font-weight-bold h3" style="color:white; padding-left: 35%;"> Sign up</span>
+			</div>
+			<div class ="col-12 ">
+					<span class="normal-bold-text" style="color:#ccccff; padding-left:36%"> Create a New account</span>
+			</div>
+			
+		</div>
 		<!-- main body space -->
 		<div class="row h-100">
 
-			<div class=" border rounded col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 p-0">
+			<div id="mainbox" class=" col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 p-0">
 
 				<!--register box black portion -->
 				<div class="col-sm-6 col-md-6 col-lg-6 h-100  float-left rounded-left d-none d-sm-block" style="background:rgb(66, 66, 66)">
@@ -36,138 +48,164 @@
 
 				<!-- register right side-->
 				<div class="col-12 col-sm-6 col-md-6 col-lg-6 h-100 pr-0 float-right rounded-right">
-					<div class="form-border p-4 m-4 ">
-					<h1 class="font-weight-bold p-0 m-0 h3 pb-2 grey-text" >Register</h1>
-					<p class="pt-0 pl-0 mt-0 normal-bold-text light-grey-text">
+					<div id="triangle">
+
+					</div>
+					<div class="form-border pt-2 pl-3 m-4 " style="background:white;">
+					<div id="hidesection">
+						<h1 class="font-weight-bold p-0 m-0 h3 pb-2 grey-text" >Register</h1>
+					<p class="pt-0 pl-0 pb-0 mt-0 mb-0 normal-bold-text light-grey-text">
 					Don't have an account? <a href="">Create your account</a>. It takes less than a minute</h6>
 					</p>
-
+					</div>
 					<form class="col-12 p-0">
 						<!--first name-->
 						<div class="form-group row p-0 m-0">
-							<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-								<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>FIRST NAME</b></p>
+							<label for="f_name" class="col-xs-12 col-sm-4 col-form-label p-0 m-0">
+								<p class="register-bold-text grey-text pt-2 m-0"><b>FIRST NAME</b></p>
 							</label>
-							<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+							<div class=" col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 								<input type="text" class="" name="">
 							</div>
 						</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--first name finished-->
 						
 						<!--Last name-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>LAST NAME</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>LAST NAME</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 									<input type="text" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--last name finished-->
 
 						<!--User name-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>USER NAME</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0" ><b>USER NAME</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 									<input type="text" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--user name finished-->
 
 						<!--Email name-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>EMAIL ID</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>EMAIL ID</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 									<input type="text" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--email finished-->
 						
 						<!--Date of birth-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>DATE OF BIRTH</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>DATE OF BIRTH</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
-									<input type="text" class="" name="">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
+									<input type="date" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--Date of birth finished-->
 
 						<!--phone no.-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>PHONE NO</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>PHONE NO</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 									<input type="text" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--phone no. finished-->
 
 						<!--password name-->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-1 m-0" style="font-size: 14px;"><b>PASSWORD</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>PASSWORD</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
 									<input type="password" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--password finished-->
 
 						<!--confirm password -->
 						<div class="form-group row p-0 m-0">
-								<label for="f_name" class="col-md-4 col-form-label p-0 m-0">
-									<p class="normal-bold-text grey-text pt-0 m-0" style="font-size: 14px; line-height: 1;"><b>CONFIRM PASSWORD</b></p>
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>CONFIRM PASSWORD</b></p>
 								</label>
-								<div class="col-md-8 p-0 m-0 pl-2 pb-1 pt-1 input-text-field">
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 pt-1 input-text-field">
 									<input type="password" class="" name="">
 								</div>
 							</div>
-						<div class="dropdown-divider mt-1 mb-1"></div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
 						<!--confirm password finished-->
 
 						
-
-						<div class="form-group pl-0 pt-4 pb-0 mt-2">
-							<p class="normal-bold-text light-grey-text"><label class="checkbox-inline"><input type="radio" value=""> I accept terms and
+						<!--accept terms and condition-->
+						<div class="form-group pl-3 pt-3 pb-0 mt-1 mb-1 row">
+							<label class="checkbox-inline"><input type="radio" value=""></label>
+							<p class="normal-bold-text light-grey-text pt-1 ml-1">I accept terms and
 								condition
-								and privacy policy </p></label>
+								and privacy policy </p>
 						</div>
+						<!--end accept terms-->
 
-						<div class="form-group col-lg-12 h-100 pt-1">
+						<!--sign up button-->
+						<div class="form-group col-lg-12 h-100 ml-4">
 							<button type="button" class="sign-up"> SIGN-UP </button>
 							<!-- <button type="button" class="btn float-right btn-danger btn-sm">Sign Up</button>	 -->
 						</div>
+						<!-- sign up button finish-->
 
-						<div class="form-group col-lg-12 h-100 p-3">
-							<div class="row">
-							<div class="col-lg-4 float-left pr-4 h-100">
-								<button type="button" class="btn float-left btn-primary btn-sm" style="border-radius: 15px;">Facebook</button>
-							</div>
-
-							<div class="col-lg-4 h-100">
-								<button type="button" class="btn float-none btn-info btn-sm" style="border-radius: 12px;">Twitter</button>
-							</div>
-
-							<div class="col-lg-4 float-right h-100">
-								<button type="button" class="btn float-right btn-danger btn-sm" style="border-radius: 12px;">Google + </button>
-							</div>
-						</div>
+						<!--social button group-->
+						<div class="col-lg-12 mt-4 ml-0 pl-0 pt-2">
+								<div class="row normal-bold-text text-center col-lg-12 light-grey-text">
+										<p style="margin:auto">Signup with Social Media</p>
+									</div>
+								<div class="form-group col-lg-12 h-100 p-0 pl mt-0 row mt-2 no-gutters">
+								
+								<div class="col p-0 m-0">
+									<button id="facebook" class="small-button">
+										<i class="fab fa-facebook-f"></i>
+										<p>Facebook</p>
+									</button>
+								</div>
+								<div class="col p-0 mt-0 mb-0 ml-1">
+									<button id="twitter" class="small-button">
+										<i class="fab fa-twitter"></i>
+										<p>Twitter</p>
+									</button>
+								</div>
+								<div class="col p-0 mt-0 ml-1 ml-1">
+									<button id="google" class="small-button">
+										<i class="fab fa-google-plus-g" style="margin-right:5%"></i>
+										<p>Google+</p>
+									</button>
+								</div>
 						</div> 
+						<!-- social button group finish-->
+						
+						<div class="col-lg-12 p-2" id="bottomtext">
+								<p style="margin-left:15%">Already have an account? <a href="">Login now</a></p>
+						</div>
 					</form>
+
+					<!-- form finished-->
 				</div>
 				</div>
 			</div>
@@ -179,6 +217,36 @@
 		<div class="row p-4"></div>
 	</div>
 
+	<script type="text/javascript">
+		function myFunction(x) {
+  			var y = document.getElementById("MobileHideSignup");
+  			if (x.matches) {
+  			  y.style.display = "block";
+				document.getElementById("hidesection").style.display = "none";
+				console.log("done");
+				document.getElementById("triangle").style.display = "block";
+				document.getElementById("topdiv").style.backgroundColor = "rgb(66, 66, 66)";
+				
+				document.getElementById("mainbox").classList.remove("border","rounded");
+				document.getElementById("bottomtext").classList.remove("normal-bold-text");
+				document.getElementById("mainbox").classList.remove("mb-4");
+  			} else {
+    			y.style.display = "none";
+				document.getElementById("hidesection").style.display = "block";
+				document.getElementById("triangle").style.display = "none";
+				document.getElementById("topdiv").style.backgroundColor = "white";
+				console.log("not done");
+				document.getElementById("mainbox").classList.add("border","rounded");
+				document.getElementById("bottomtext").classList.add("normal-bold-text");
+				document.getElementById("mainbox").classList.add("mb-4");
+  			}
+		}
+
+		
+		var x = window.matchMedia("(max-width: 578px)")
+		myFunction(x) // Call listener function at run time
+		x.addListener(myFunction) // Attach listener function on state changes
+	</script>
 </body>
 
 </html>

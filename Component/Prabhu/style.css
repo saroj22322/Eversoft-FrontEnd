@@ -1,6 +1,4 @@
-#smallbox{
-    transition: 0.5s;
-}
-.hover:hover{
-    background: grey;
+.small-button{
+    outline: none;
+    border: none;
 }

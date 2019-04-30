@@ -6,16 +6,21 @@
     background-color: darkslategray;
 }*/
 
-@media (max-width:576px) {
+@media (max-width:575px) {
 
       .form-border
       {
-        border:1px solid !important;
+        
+        box-shadow: 0px 0px 10px rgba(0, 0, 0,0.5);
         border-radius: 5px;
         border-color: rgb(69, 2, 156);
 
         }
-
+        .dropdown-divider
+        {
+          width: 95%;
+        }
+      
 
 }
 
@@ -32,11 +37,14 @@
 }
 
 .small-text{
-  font-size: 12px;
+  font-size: 10px;
 }
-
+.register-bold-text{
+  font-size:10px;
+  font-weight:500;
+}
 .normal-bold-text{
-  font-size: 12px; 
+  font-size: 10px; 
   font-weight:500;
 }
 
@@ -47,37 +55,105 @@
 .light-grey-text{
   color: rgb(95, 94, 94);
 }
-.input-text-field >input[type=text], .input-text-field >input[type=password] {
+.input-text-field >input[type=text],.input-text-field > input[type=date], .input-text-field >input[type=password] {
   border-style: none;
   border-bottom:  rgba(255, 255, 255, 0) 0.5px solid;
-  width:100%;
+  width:95%;
   transition: 0.3s ease;
   font-size: 12px; 
   font-weight:500;
-  color:  rgb(66, 66, 66);
-}
-
-.input-text-field >input[type=text]:hover, .input-text-field >input[type=password]:hover {
-  border-bottom:  rgba(167, 167, 167,0.5) 0.5px solid ;
+  color:  rgb(138, 138, 138);
 }
 
 .input-text-field >input[type=text]:focus, .input-text-field >input[type=password]:focus {
   outline: none !important;
-  border-bottom:  rgba(167, 167, 167, 0.5) 0.5px solid;
 }
+
+#triangle {
+	position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 500px solid rgb(66, 66, 66);
+      border-right: 578px solid transparent;
+      z-index: -1;
+      margin: 0;
+      padding: 0;
+    }
+
 
 .sign-up{
   background-color: rgb(111, 109, 255);
   color:white;
-  width: 100%;
-  height: 10vh;
+  display: inline-block;
+  width: 80%;
+  height: 40px;
   border-radius: 5px;
   border: none;
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .sign-up:hover{
   box-shadow: 0px 0px 10px rgb(111, 109, 255) ;
   font-size: 105%;
+  border: none;
 }
+
+#facebook{
+  background: #3b5998;
+  transition: 0.3s ease-in;
+  color: white;
+}
+#facebook:hover{
+  background: white;
+  box-shadow: 1px 2px 14px #3b5998;
+  color: #3b5998;
+}
+
+#twitter{
+  background:#3399ff;
+  transition: 0.3s ease-in;
+  color: white;
+}
+#twitter:hover{
+  background: white;
+  box-shadow: 1px 2px 14px #3399ff;
+  color: #3399ff;
+}
+#google{
+  background:#cc3333;
+  transition: 0.3s ease-in;
+  color: white;
+}
+#google:hover{
+  background: white;
+  box-shadow: 1px 2px 14px #cc3333;
+  color: #cc3333;
+}
+
+.small-button{
+  outline: none;
+  border: none; 
+  height: 26px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 0px;
+}
+.small-button i{
+  float:left;
+  display: block;
+  margin: 3px 8px;
+}
+
+.small-button p{
+  float:left;
+  display: block;
+  padding: 0px; 
+  margin: 3px auto;
+  padding-left: 2%;
+  font-size: 70%;
+}
+
+
+
+
 
