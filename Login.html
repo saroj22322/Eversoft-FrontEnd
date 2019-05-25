@@ -1,55 +1,194 @@
-<div class="page"></div>
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eversoft Login Page</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link href="css/style.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html>
 
-  <div class="container">
-    <div class="row">
-    <div class="left">
-      <div class="login">Hello Eversoft</div>
-      <div class="eula">Welcome to Communication Panel of Eversoft</div>
-    </div>
-    <div class="right">
-      <div class="form">
-        <form id="log">
-          <h1>Login</h1>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-user"></i></span>
-              <input type="text" class="form-control" name="username" placeholder="email or username" required="required">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-              <input type="password" class="form-control" name="password" placeholder="password" required="required">
-            </div><br>
+<head>
+	<title>Log In</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
 
-            <div class="clearfix">
-              <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label> &nbsp;
-              <a href="#" class="pull-right">Forgot Password?</a>
-            </div>
-          </div> <br>
-          <div class="form-group">
-            <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
-          </div>
+</head>
 
-          <br>
-          <!-- <div class="or-seperator"><i>or</i></div>
-          <p class="text-center">Login with Social Media</p>
-          <div class="text-center social-btn">
-            <a href="#" class="btn btn-primary"><i class="fa fa-facebook"></i>&nbsp; Facebook</a>
-            <a href="#" class="btn btn-info"><i class="fa fa-twitter"></i>&nbsp; Twitter</a>
-            <a href="#" class="btn btn-danger"><i class="fa fa-google"></i>&nbsp; Google</a>
-          </div> -->
-        </form>
-        <p class="text-center text-muted small">Don't have an account? <a href="#">Sign up here!</a></p>
-      </div>
-    </div>
-    </div>
-  </div>
+<body>
+
+	<div class="container-fluids" style="width: 100%; height: 600px">
+		<!--header space -->
+		<div id="topdiv" class="row p-3 "></div>
+
+		<!--only display in mobile section-->
+		<div  class="row pl-4" id="MobileHideSignup" style="background:rgb(66, 66, 66);" >
+			<div class="col-12 pl-4 pt-4 ">
+					<span class="font-weight-bold h3" style="color:white; padding-left: 36.5%;"> Sign In</span>
+			</div>
+			<div class ="col-12 ">
+					<span class="normal-bold-text" style="color:#ccccff; padding-left:36%"> Log-in to your account</span>
+			</div>
+			
+		</div>
+		<!--mobile display section end-->
+		<!-- main body space -->
+		<div class="row h-100">
+
+			<div id="mainbox" class=" col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 p-0">
+
+				<!-- Login box black portion -->
+				<div class="col-sm-6 col-md-6 col-lg-6 h-100  float-left rounded-left d-none d-sm-block" style="background:rgb(66, 66, 66)">
+				
+
+					<div class="col-lg-12 col-md-12">
+						<div style="height:15px;"></div>
+						<h1 class="text-left pt-4 pb-0 pl-4 mb-0 ml-4 mt-4 text-light" style="font-size: 50px; font-weight:400; line-height: 40px;">Hello</h1>
+						<h1 class="text-left pt-0 pb-0 mb-0 pl-4 ml-4 mt-0 text-light" style="font-weight:700; font-size: 50px;">Eversoft</h1>
+						<p class="text-left pt-0 mt-0 pl-4 ml-4 text-light small-text"> Welcome to Communication
+							Panel of Eversoft</p>
+					</div>
+
+				</div>
+				<!-- login black portion end-->
+
+				<!-- Login right side-->
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 h-100 pr-0 float-right rounded-right">
+					<!-- for mobile view background -->
+					<div id="triangle">
+
+					</div>
+					<!-- mobile view background-->
+					
+					<!--form start-->
+					<div id="formbody"class="form-border pt-4 pl-3 m-4 " style="background:white;">
+							
+						<!-- for form blank space -->
+						<div id="formhidesection" style="height: 70px;"></div>
+
+						<div id="hidesection">
+							<h1 class="font-weight-bold p-0 m-0 h3 pb-2 grey-text" >Log-in</h1>
+						</div>
+						
+					<form class="col-12 p-0">
+						<!--Username or Email name-->
+						<div class="form-group row p-0 m-0">
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>USERNAME OR EMAIL</b></p>
+								</label>
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
+									<input type="text" class="" name="">
+								</div>
+							</div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
+						<!--email finished-->
+
+						<!--password name-->
+						<div class="form-group row p-0 m-0">
+								<label for="f_name" class="col-sm-4 col-form-label p-0 m-0">
+									<p class="register-bold-text grey-text pt-2 m-0"><b>PASSWORD</b></p>
+								</label>
+								<div class="col-sm-8 p-0 m-0 pl-2 pb-1 input-text-field">
+									<input type="password" class="" name="">
+								</div>
+							</div>
+						<div class="dropdown-divider mt-0 mb-0"></div>
+						<!--password finished-->
+						
+						<!--Keep me logged in-->
+						<div class="form-group pl-3 pt-3 pb-4 mt-1 mb-3 mt-4 row">
+							<div class="col">
+								<a href="" class="normal-bold-text text-left light-grey-text pt-1 mr-4 pl-1 ml-3 pr-4 ml-1">Forget Password?</a>
+							</div>
+							<div class="col custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck1">
+										<label class="custom-control-label normal-bold-text text-primary light-grey-text pt-1 ml-1" for="customCheck1">Keep me signed</label>
+							</div>
+						</div>
+						<!--end accept terms-->
+
+						<!--sign in button-->
+						<div class="form-group col-lg-12 h-100 ml-4">
+							<button type="button" class="sign-up"> SIGN-IN </button>
+							<!-- <button type="button" class="btn float-right btn-danger btn-sm">Sign Up</button>	 -->
+						</div>
+						<!-- sign up button finish-->
+
+						<!--social button group-->
+						<div class="col-lg-12 mt-4 ml-0 pl-0 pt-2">
+								<div class="row normal-bold-text text-center col-lg-12 light-grey-text">
+										<p style="margin:auto">Signup with Social Media</p>
+									</div>
+								<div class="form-group col-lg-12 h-100 p-0 pl mt-0 row mt-2 no-gutters">
+								
+								<div class="col p-0 m-0">
+									<button id="facebook" class="small-button">
+										<i class="fab fa-facebook-f"></i>
+										<p>Facebook</p>
+									</button>
+								</div>
+								<div class="col p-0 mt-0 mb-0 ml-1">
+									<button id="twitter" class="small-button">
+										<i class="fab fa-twitter"></i>
+										<p>Twitter</p>
+									</button>
+								</div>
+								<div class="col p-0 mt-0 ml-1 ml-1">
+									<button id="google" class="small-button">
+										<i class="fab fa-google-plus-g" style="margin-right:5%"></i>
+										<p>Google+</p>
+									</button>
+								</div>
+						</div> 
+						<!-- social button group finish-->
+						
+						<div class="col-lg-12 p-2" id="bottomtext">
+								<p style="margin-left:15%">Don't have an account? <a href="">Sign-Up</a></p>
+						</div>
+					</form>
+
+					<!-- form finished-->
+				</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- main footer space -->
+		<div class="row p-4"></div>
+	</div>
+
+	<script type="text/javascript">
+		function myFunction(x) {
+  			var y = document.getElementById("MobileHideSignup");
+  			if (x.matches) {
+  			  y.style.display = "block";
+				document.getElementById("hidesection").style.display = "none";
+				document.getElementById("formhidesection").style.display = "block";
+				console.log("done");
+				document.getElementById("triangle").style.display = "block";
+				document.getElementById("topdiv").style.backgroundColor = "rgb(66, 66, 66)";
+				
+				document.getElementById("mainbox").classList.remove("border","rounded");
+				document.getElementById("bottomtext").classList.remove("normal-bold-text");
+				document.getElementById("mainbox").classList.remove("mb-4");
+  			} else {
+    			y.style.display = "none";
+				document.getElementById("hidesection").style.display = "block";
+				document.getElementById("formhidesection").style.display = "none";
+				document.getElementById("triangle").style.display = "none";
+				document.getElementById("topdiv").style.backgroundColor = "white";
+				console.log("not done");
+				document.getElementById("mainbox").classList.add("border","rounded");
+				document.getElementById("bottomtext").classList.add("normal-bold-text","mb-4");
+				document.getElementById("mainbox").classList.add("mb-4");
+  			}
+		}
+
+		
+		var x = window.matchMedia("(max-width: 578px)")
+		myFunction(x) // Call listener function at run time
+		x.addListener(myFunction) // Attach listener function on state changes
+	</script>
+</body>
+
+</html>

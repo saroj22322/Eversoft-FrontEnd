@@ -24,7 +24,25 @@
 
 }
 
-@media (min-width:576px) {
+@media (max-width: 655px) and (min-width:575px)
+{ 
+    #formbody .small-button p{
+      float:left;
+      display: block;
+      padding: 0px; 
+      margin: 1px auto;
+      padding-left: 0px;
+      font-size: 58%;
+    }
+    
+    #formbody .small-button i{
+      float:left;
+      display: block;
+      margin: 3px 3px;
+    }
+}
+
+@media (min-width:575px) {
 
       .form-fulls
       {
@@ -71,10 +89,10 @@
 
 #triangle {
 	position: absolute;
-      width: 0;
-      height: 0;
-      border-top: 500px solid rgb(66, 66, 66);
-      border-right: 578px solid transparent;
+      width: 100%;
+      height: 100%;
+      border-top: 480px solid rgb(66, 66, 66);
+      border-right: 498px solid transparent;
       z-index: -1;
       margin: 0;
       padding: 0;

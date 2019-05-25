@@ -19,7 +19,7 @@
 		<!--header space -->
 		<div id="topdiv" class="row p-3 "></div>
 
-
+		<!--header title for mobile view-->
 		<div  class="row pl-4" id="MobileHideSignup" style="background:rgb(66, 66, 66);" >
 			<div class="col-12 pl-4 pt-4 ">
 					<span class="font-weight-bold h3" style="color:white; padding-left: 35%;"> Sign up</span>
@@ -27,8 +27,9 @@
 			<div class ="col-12 ">
 					<span class="normal-bold-text" style="color:#ccccff; padding-left:36%"> Create a New account</span>
 			</div>
-			
+		<!--header title end-->	
 		</div>
+
 		<!-- main body space -->
 		<div class="row h-100">
 
@@ -45,19 +46,25 @@
 					</div>
 
 				</div>
+				<!--register black portion end-->
 
 				<!-- register right side-->
 				<div class="col-12 col-sm-6 col-md-6 col-lg-6 h-100 pr-0 float-right rounded-right">
-					<div id="triangle">
-
-					</div>
+					
+					<!--triangle background for mobile view-->
+					<div id="triangle"></div>
+					<!--form border-->
 					<div class="form-border pt-2 pl-3 m-4 " style="background:white;">
+					
+					<!--not visible in mobile-->	
 					<div id="hidesection">
 						<h1 class="font-weight-bold p-0 m-0 h3 pb-2 grey-text" >Register</h1>
 					<p class="pt-0 pl-0 pb-0 mt-0 mb-0 normal-bold-text light-grey-text">
 					Don't have an account? <a href="">Create your account</a>. It takes less than a minute</h6>
 					</p>
 					</div>
+					<!--end-->
+					
 					<form class="col-12 p-0">
 						<!--first name-->
 						<div class="form-group row p-0 m-0">
@@ -243,7 +250,7 @@
 		}
 
 		
-		var x = window.matchMedia("(max-width: 578px)")
+		var x = window.matchMedia("(max-width: 575px)")
 		myFunction(x) // Call listener function at run time
 		x.addListener(myFunction) // Attach listener function on state changes
 	</script>
